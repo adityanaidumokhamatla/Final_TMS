@@ -1,0 +1,49 @@
+.App {
+  text-align: center;
+  position: relative;
+  max-height: 100vh; /* Limit the height of the container to the viewport height */
+  overflow-y: auto; /* Allow vertical scrolling within this container */
+}
+
+.logo {
+  margin: 20px 0; /* Adjust as needed */
+}
+
+.logo img {
+  height: 100px; /* Adjust height as needed */
+}
+
+.content {
+  padding-top: 80px; /* Space for fixed navbar */
+}
+
+.navbar {
+  position: fixed; /* Fix the navbar at the top */
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure it stays above other elements */
+  background-color: #18aaa3; /* Solid background */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar li {
+  margin-right: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+  padding: 10px; /* Reduced padding */
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #dfb80a; /* Optional: hover effect */
+}

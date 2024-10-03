@@ -1,0 +1,107 @@
+/* General home container styles */
+.home {
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f9fa; /* Light background */
+}
+
+.home h2 {
+  font-size: 2.5rem;
+  color: #333; /* Dark gray for better readability */
+  margin-bottom: 10px;
+}
+
+.home p {
+  font-size: 1.2rem;
+  color: #666; /* Lighter gray for description */
+  margin-bottom: 20px;
+}
+
+/* Hero section */
+.hero {
+  background-image: url('hero-image.jpg'); /* Add background image */
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+  color: white;
+  text-align: center;
+}
+
+.hero-content {
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent background for readability */
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  background-color: #f5b030;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #18aaa3;
+}
+
+/* Features section with card layout */
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 20px;
+  background-color: #f0f0f0;
+}
+
+.feature-card {
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+  border-radius: 10px;
+  max-width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for zooming in the cards */
+.feature-card:hover {
+  transform: scale(1.05); /* Zoom in the card on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a bigger shadow on hover */
+}
+
+.feature-card h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #18aaa3;
+  color: white;
+  margin-top: 50px;
+}
+
+.footer p {
+  font-size: 1rem;
+}
