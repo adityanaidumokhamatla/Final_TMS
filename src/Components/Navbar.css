@@ -1,0 +1,40 @@
+.navbar {
+  position: fixed; /* Keep the navbar fixed at the top */
+  top: 0; /* Align it at the top of the page */
+  width: 100%; /* Make sure it spans the full width */
+  z-index: 1000; /* Ensure the navbar stays above other elements */
+  background-color: #24c9a5; /* Set the background color */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1) ; /* Add a subtle shadow */
+  padding: 20px 0; /* Increase padding to make the navbar larger */
+  font-size: 18px; /* Increase font size for a bigger appearance */
+  transition: background-color 0.3s ease; /* Optional: Add smooth transitions */
+  max-height: 100vh; /* Limit the height of the container to the viewport height */
+  overflow-y: auto; /* Allow vertical scrolling within this container */
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center; /* Center the navbar items */
+}
+
+.navbar li {
+  margin-right: 30px; /* Add more space between the navbar items */
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white; /* Change text color for better contrast */
+  padding: 15px; /* Increase padding around the links */
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #19b9b1; /* Hover effect for links */
+}
+
+body {
+  padding-top: 80px; /* Add space to avoid content being hidden behind the navbar */
+}
