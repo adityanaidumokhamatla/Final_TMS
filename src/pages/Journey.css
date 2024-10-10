@@ -1,81 +1,112 @@
 .journey {
-    padding: 40px 20px;
-    background-color: #e8f0fe; /* Light blue background for a fresh look */
-    text-align: center;
-    font-family: 'Arial', sans-serif;
-  }
-  
-  .journey h1 {
-    font-size: 2.5em;
-    color: #1a237e; /* Dark blue color for headings */
-    margin-bottom: 20px;
-  }
-  
-  .journey p {
-    font-size: 1.2em;
-    color: #555;
-    margin-bottom: 40px;
-    line-height: 1.5; /* Improved line spacing */
-  }
-  
+  padding: 40px 20px;
+  background-color: #e8f0fe; /* Light blue background for a fresh look */
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.journey h1 {
+  font-size: 2.5em; 
+  color: #1a237e; /* Dark blue color for headings */
+  margin-bottom: 20px;
+}
+
+.journey p {
+  font-size: 1.2em;
+  color: #555;
+  margin-bottom: 40px;
+  line-height: 1.5; /* Improved line spacing */
+}
+
+.courses-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center align the course cards */
+  gap: 20px;
+}
+
+.course-card {
+  background-color: #ffffff; /* White background for cards */
+  border-radius: 10px; /* Softer corners */
+  padding: 30px;
+  width: 300px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Deeper shadow for depth */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition effects */
+}
+
+.course-card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+.course-card h2 {
+  font-size: 1.5em;
+  color: #1976d2; /* Primary color for course titles */
+  margin-bottom: 15px;
+}
+
+.course-card p {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 20px;
+  line-height: 1.4; /* Improved line spacing */
+}
+
+.course-link {
+  display: inline-block;
+  font-size: 1.1em;
+  color: #fff; /* White text for links */
+  background-color: #1976d2; /* Blue background for the button */
+  text-decoration: none;
+  padding: 12px 20px; /* Increased padding for a button-like appearance */
+  border-radius: 8px; /* Smooth, rounded corners */
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Smooth transition effects */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.course-link:hover {
+  background-color: #1565c0; /* Darker blue on hover */
+  transform: translateY(-3px); /* Slight upward movement on hover */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+
+/* Styles for the "Take a Quiz" button */
+.quiz-section {
+  margin-top: 50px;
+}
+
+.quiz-link {
+  font-size: 1.2em;
+  color: #fff;
+  background-color: #ff7043; /* Vibrant orange for the quiz button */
+  text-decoration: none;
+  padding: 15px 25px; /* Increased padding for a larger button */
+  border-radius: 8px; /* Softer, rounded corners */
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transition effects */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.quiz-link:hover {
+  background-color: #e64a19; /* Darker orange on hover */
+  transform: scale(1.05); /* Slight scaling on hover */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+@media (max-width: 768px) {
   .courses-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Center align the course cards */
-    gap: 20px;
-  }
-  
-  .course-card {
-    background-color: #ffffff; /* White background for cards */
-    border-radius: 10px; /* Softer corners */
-    padding: 30px;
-    width: 300px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Deeper shadow for depth */
-    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition effects */
-  }
-  
-  .course-card:hover {
-    transform: translateY(-5px); /* Lift effect on hover */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
-  }
-  
-  .course-card h2 {
-    font-size: 1.5em;
-    color: #1976d2; /* Primary color for course titles */
-    margin-bottom: 15px;
-  }
-  
-  .course-card p {
-    font-size: 1em;
-    color: #666;
-    margin-bottom: 20px;
-    line-height: 1.4; /* Improved line spacing */
-  }
-  
-  .course-link {
-    font-size: 1em;
-    color: #fff; /* White text for links */
-    background-color: #18aaa3; /* Button-like background */
-    text-decoration: none;
-    padding: 10px 15px; /* Padding for a button effect */
-    border-radius: 5px; /* Softer corners for the button */
-    font-weight: bold;
-    transition: background-color 0.3s, transform 0.3s; /* Smooth transition effects */
-  }
-  
-  .course-link:hover {
-    background-color: #149e8f; /* Darker shade on hover */
-    transform: scale(1.05); /* Slight scaling on hover */
-  }
-  
-  @media (max-width: 768px) {
-    .courses-list {
       flex-direction: column;
       align-items: center;
-    }
-  
-    .course-card {
-      width: 90%; /* Responsive width for mobile */
-    }
   }
-  
+
+  .course-card {
+      width: 90%; /* Responsive width for mobile */
+  }
+
+  .quiz-link {
+      padding: 12px 20px; /* Slightly smaller padding for mobile */
+      font-size: 1.1em; /* Adjust font size for mobile */
+  }
+}
