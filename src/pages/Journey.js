@@ -1,11 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // Make sure to import Link from 'react-router-dom'
 import './Journey.css';
 
 const courses = [
   {
     title: 'Introduction to Web Development',
     description: 'Learn the basics of HTML, CSS, and JavaScript to build your first website.',
-    link: 'https://www.youtube.com/playlist?list=PLfqMhTWNBTe3H6c9OGXb5_6wcc1Mca52n', 
+    link: 'https://www.youtube.com/playlist?list=PLfqMhTWNBTe3H6c9OGXb5_6wcc1Mca52n',
   },
   {
     title: 'Java Programming',
@@ -15,12 +16,12 @@ const courses = [
   {
     title: 'Python for Data Science',
     description: 'Get started with Python and learn how to analyze data using libraries like pandas and NumPy.',
-    link: 'https://www.youtube.com/playlist?list=PLeo1K3hjS3us_ELKYSj_Fth2tIEkdKXvV', 
+    link: 'https://www.youtube.com/playlist?list=PLeo1K3hjS3us_ELKYSj_Fth2tIEkdKXvV',
   },
   {
     title: 'React - Frontend Framework',
     description: 'Learn how to build interactive and responsive web applications using React.',
-    link: 'https://www.youtube.com/playlist?list=PLu0W_9lII9agx66oZnT6IyhcMIbUMNMdt', 
+    link: 'https://www.youtube.com/playlist?list=PLu0W_9lII9agx66oZnT6IyhcMIbUMNMdt',
   },
   {
     title: 'Cybersecurity Basics',
@@ -30,12 +31,12 @@ const courses = [
   {
     title: 'Blockchain Essentials',
     description: 'Explore the basics of blockchain technology and its applications.',
-    link: 'https://www.youtube.com/playlist?list=PLYwpaL_SFmcDFRupamGc-9zc-vQqvkQnn', 
+    link: 'https://www.youtube.com/playlist?list=PLYwpaL_SFmcDFRupamGc-9zc-vQqvkQnn',
   },
   {
     title: 'Machine Learning with Python',
     description: 'Dive into machine learning algorithms and techniques using Python.',
-    link: 'https://www.youtube.com/playlist?list=PLeo1K3hjS3uvCeTYTeyfe0-rN5r8zn9rw', 
+    link: 'https://www.youtube.com/playlist?list=PLeo1K3hjS3uvCeTYTeyfe0-rN5r8zn9rw',
   },
 ];
 
@@ -54,6 +55,11 @@ const Journey = () => {
             </a>
           </div>
         ))}
+      </div>
+      <div className="quiz-section">
+        <Link to="/quiz" className="quiz-link">
+          Take a Quiz
+        </Link>
       </div>
     </div>
   );
