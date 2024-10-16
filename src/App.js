@@ -9,7 +9,6 @@ import Contact from './pages/Contact';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 import FAQ from './pages/FAQ';
-
 import './App.css';  
 import logo from './Components/logo.jpg';
 
@@ -28,7 +27,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/journey" element={<Journey />} /> 
-          <Route path="/faq" element ={<FAQ/>} />
+          <Route path="/faq" element={<FAQ />} />
           <Route path="/quiz" element={<Quiz />} />
         </Routes>
       </div>
